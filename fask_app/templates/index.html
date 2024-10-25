@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Futuristic Video Downloader</h1>
+<form method="POST" action="/download">
+    <input type="text" name="url" placeholder="Enter video URL" required>
+    <select name="platform">
+        <option value="YouTube">YouTube</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Streaming">Streaming</option>
+    </select>
+    <button type="submit">Download</button>
+</form>
+{% endblock %}
